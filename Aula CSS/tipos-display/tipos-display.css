@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/* font: inherit; */
+	/* list-style: none; */
+	/* text-decoration: none; */
+	/* box-shadow: none; */
+}
+
+/* 1. Box-sizing:
+  Por que usar: Normalmente, as propriedades de largura e altura não incluem o padding e a borda.
+  Ao definir box-sizing: border-box, o padding e a borda são incluídos no tamanho total do elemento.
+  Isso facilita o controle dos tamanhos dos elementos no layout. */
+
+/* 2. Resetar Margem e Padding:
+  Por que usar: Navegadores colocam margens e padding por padrão nos elementos.
+  Resetar esses valores garante que todos os elementos comecem sem margem e padding,
+  criando um ponto de partida uniforme. */
+
+/* 3. Resetar Borda (opcional):
+  Por que usar: Alguns elementos têm bordas padrão que podem não ser desejadas.
+  Resetar a borda remove essas bordas de todos os elementos, a menos que você as defina explicitamente. */
+
+/* 4. Herdar Fonte (opcional):
+  Por que usar: Pseudo-elementos como ::before e ::after nem sempre herdam o estilo de fonte do elemento pai.
+  Para garantir que todos os elementos e seus pseudo-elementos usem a mesma fonte, você pode herdar esse valor. */
+
+/* 5. Resetar Estilo de Lista (opcional para listas):
+  Por que usar: Listas (<ul>, <ol>) vêm com marcadores ou numeração por padrão.
+  Se você quiser remover esses estilos de lista, pode usar esta configuração. */
+
+/* 6. Resetar Sombras (box-shadow) (opcional):
+  Por que usar: Caso você utilize sombras nos elementos, pode ser útil remover as sombras padrão,
+  especialmente em pseudo-elementos. */
+
+/* 7. Resetar Decoração de Texto (opcional para links, etc.):
+  Por que usar: Links (<a>) e outros elementos inline podem ter decorações de texto (como sublinhado) por padrão.
+  Você pode remover essa decoração se não for necessária. */
+
+body {
+	font-family: Arial, sans-serif;
+	padding: 20px;
+}
+
+h1 {
+	text-align: center;
+	color: #2c3e50;
+}
+
+.container {
+	margin: 20px 0;
+	padding: 10px;
+}
+
+.container h2 {
+	margin-bottom: 10px;
+}
+
+.exemplo-box {
+	padding: 10px;
+	margin: 5px;
+	text-align: center;
+	color: white;
+}
+
+.exemplo-container {
+	background-color: #ecf0f1;
+	padding: 10px;
+	height: 200px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.block {
+	display: block;
+	background-color: #3498db;
+}
+
+.inline {
+	display: inline;
+	background-color: #e74c3c;
+}
+
+.inline-block {
+	display: inline-block;
+	background-color: #f39c12;
+	width: 150px;
+}
+
+.flex {
+	background-color: #2ecc71;
+}
+
+.grid {
+	background-color: #9b59b6;
+}
+
+.none {
+	display: none;
+}
+
+.flex-container {
+	display: flex;
+	gap: 10px;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="tipos-display.css">
+  <title>Exemplo de Tipos de Display CSS</title>
+</head>
+
+<body>
+
+  <h1>Tipos de Display CSS</h1>
+
+  <!-- Exemplo de Block -->
+  <div class="container">
+    <h2>Display: Block</h2>
+    <div class="exemplo-container">
+      <div class="exemplo-box block">Block 1</div>
+      <div class="exemplo-box block">Block 2</div>
+      <div class="exemplo-box block">Block 3</div>
+    </div>
+    <p>Os elementos com <strong>display: block</strong> ocupam toda a largura disponível e são empilhados verticalmente,
+      um abaixo do outro. Exemplos comuns são as tags &lt;div&gt; e &lt;p&gt;. Esse comportamento os torna adequados
+      para layouts que precisam se expandir na largura.</p>
+  </div>
+
+  <!-- Exemplo de Inline -->
+  <div class="container">
+    <h2>Display: Inline</h2>
+    <div class="exemplo-container">
+      <span class="exemplo-box inline">Inline 1</span>
+      <span class="exemplo-box inline">Inline 2</span>
+      <span class="exemplo-box inline">Inline 3 (sem quebra)</span>
+    </div>
+    <p>Os elementos com <strong>display: inline</strong> permanecem na mesma linha e não ocupam a largura inteira. Não
+      respeitam larguras ou alturas definidas, e são comumente usados em tags como &lt;span&gt; e &lt;a&gt;. O conteúdo
+      deles nunca quebra automaticamente para uma nova linha, a menos que o container seja pequeno o suficiente.</p>
+  </div>
+
+  <!-- Exemplo de Inline-Block -->
+  <div class="container">
+    <h2>Display: Inline-Block</h2>
+    <div class="exemplo-container">
+      <div class="exemplo-box inline-block">Inline-Block 1</div>
+      <div class="exemplo-box inline-block">Inline-Block 2 (pode quebrar)</div>
+      <div class="exemplo-box inline-block">Inline-Block 3</div>
+    </div>
+    <p>Os elementos com <strong>display: inline-block</strong> podem definir largura e altura, mas permanecem lado a
+      lado como elementos inline. Eles podem quebrar para uma nova linha se o espaço horizontal não for suficiente. Isso
+      os torna úteis para layouts que requerem mais controle de dimensão do que os elementos inline, mas sem a
+      necessidade de ocupar toda a largura como block.</p>
+  </div>
+
+  <!-- Exemplo de Flex -->
+  <div class="container">
+    <h2>Display: Flex</h2>
+    <div class="exemplo-container flex-container">
+      <div class="exemplo-box flex">Flex 1</div>
+      <div class="exemplo-box flex">Flex 2</div>
+      <div class="exemplo-box flex">Flex 3</div>
+    </div>
+    <p>O <strong>display: flex</strong> cria um container flexível, onde os itens podem ser organizados de várias formas
+      ao longo de um eixo. Por padrão, os itens são organizados horizontalmente, mas você pode ajustar o comportamento
+      para distribuir e alinhar os itens de acordo com as necessidades do layout. Flex é uma ótima opção para layouts
+      responsivos.</p>
+  </div>
+
+  <!-- Exemplo de Grid -->
+  <div class="container">
+    <h2>Display: Grid</h2>
+    <div class="exemplo-container grid-container">
+      <div class="exemplo-box grid">Grid 1</div>
+      <div class="exemplo-box grid">Grid 2</div>
+      <div class="exemplo-box grid">Grid 3</div>
+      <div class="exemplo-box grid">Grid 4</div>
+      <div class="exemplo-box grid">Grid 5</div>
+      <div class="exemplo-box grid">Grid 6</div>
+    </div>
+    <p>O <strong>display: grid</strong> organiza os itens em linhas e colunas, permitindo layouts mais complexos que o
+      flex. Você pode definir o número de colunas e linhas e controlar como os itens se distribuem nessas áreas. O grid
+      é perfeito para criar layouts bidimensionais precisos, onde você precisa controlar tanto o eixo horizontal quanto
+      o vertical.</p>
+  </div>
+
+  <!-- Exemplo de None -->
+  <div class="container">
+    <h2>Display: None (você não deve ver isto)</h2>
+    <div class="exemplo-container">
+      <div class="exemplo-box none">Elemento Oculto</div>
+    </div>
+    <p>O <strong>display: none</strong> remove completamente o elemento do layout. O elemento não será renderizado na
+      página e não ocupará nenhum espaço.</p>
+  </div>
+
+</body>
+
+</html>

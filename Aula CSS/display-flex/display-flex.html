@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="display-flex.css">
+  <title>Exemplo Flexbox - Display Flex</title>
+</head>
+
+<body>
+  <h1>Exemplo de Flexbox</h1>
+
+  <div class="tipo-direction">
+    <h2>Justify-content (flex-direction: row)</h2>
+
+    <div class="grupo-exemplo">
+      <p><strong>justify-content: flex-start</strong> - Justifica os itens no inicio do eixo principal nesse caso o
+        <strong>x</strong>.
+      </p>
+      <div class="container row justify-start row-container-justify">
+        <div class="item item-row-justify">1</div>
+        <div class="item item-row-justify">2</div>
+        <div class="item item-row-justify">3</div>
+      </div>
+    </div>
+
+    <div class="grupo-exemplo">
+      <p><strong>justify-content: flex-end</strong> - Justifica os itens no fim do eixo principal nesse caso o
+        <strong>x</strong>.
+      </p>
+      <div class="container row justify-end row-container-justify">
+        <div class="item item-row-justify">1</div>
+        <div class="item item-row-justify">2</div>
+        <div class="item item-row-justify">3</div>
+      </div>
+    </div>
+
+    <div class="grupo-exemplo">
+      <p><strong>justify-content: center</strong> - Centraliza os itens no eixo principal nesse caso o
+        <strong>x</strong>.
+      </p>
+      <div class="container row justify-center row-container-justify">
+        <div class="item item-row-justify">1</div>
+        <div class="item item-row-justify">2</div>
+        <div class="item item-row-justify">3</div>
+      </div>
+    </div>
+
+    <div class="grupo-exemplo">
+      <p><strong>justify-content: space-between</strong> - Separa os itens no eixo principal nesse caso o
+        <strong>x</strong>.
+      </p>
+      <div class="container row justify-space-between row-container-justify">
+        <div class="item item-row-justify">1</div>
+        <div class="item item-row-justify">2</div>
+        <div class="item item-row-justify">3</div>
+      </div>
+    </div>
+
+    <div class="grupo-exemplo">
+      <p><strong>justify-content: space-around</strong> - Separa os itens no eixo principal nesse caso o
+        <strong>x</strong>, mantendo metade desse espaço nas extremidades.
+      </p>
+      <div class="container row justify-space-around row-container-justify">
+        <div class="item item-row-justify">1</div>
+        <div class="item item-row-justify">2</div>
+        <div class="item item-row-justify">3</div>
+      </div>
+    </div>
+
+    <div class="grupo-exemplo">
+      <p><strong>justify-content: space-evenly</strong> - Separa os itens no eixo principal nesse caso o
+        <strong>x</strong>, mantendo o mesmo espaço nas extremidades.
+      </p>
+      <div class="container row justify-space-evenly row-container-justify">
+        <div class="item item-row-justify">1</div>
+        <div class="item item-row-justify">2</div>
+        <div class="item item-row-justify">3</div>
+      </div>
+    </div>
+
+    <h2>Align-items (flex-direction: row)</h2>
+
+    <div class="grupo-exemplo">
+      <p><strong>align-items: flex-start</strong> - Alinha os itens ao inicio do eixo secundário nesse caso o
+        <strong>y</strong>.
+      </p>
+      <div class="container row align-start row-container-align">
+        <div class="item item-row-align">1</div>
+        <div class="item item-row-align">2</div>
+        <div class="item item-row-align">3</div>
+      </div>
+    </div>
+
+    <div class="grupo-exemplo">
+      <p><strong>align-items: flex-end</strong> - Alinha os itens ao fim do eixo secundário nesse caso o
+        <strong>y</strong>.
+      </p>
+      <div class="container row align-end row-container-align">
+        <div class="item item-row-align">1</div>
+        <div class="item item-row-align">2</div>
+        <div class="item item-row-align">3</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grupo-exemplo">
+    <p><strong>align-items: center</strong> - Centraliza os itens no eixo secundário nesse caso o <strong>y</strong>.
+    </p>
+    <div class="container row align-center row-container-align">
+      <div class="item item-row-align">1</div>
+      <div class="item item-row-align">2</div>
+      <div class="item item-row-align">3</div>
+    </div>
+  </div>
+
+  <div class="tipo-direction">
+    <h2>Justify-content (flex-direction: column)</h2>
+
+    <div class="grupo-exemplo">
+      <p><strong>justify-content: flex-start</strong> - Justifica os itens no inicio do eixo principal nesse caso o
+        <strong>y</strong>.
+      </p>
+      <div class="container column justify-start column-container-justify">
+        <div class="item item-column-justify">1</div>
+        <div class="item item-column-justify">2</div>
+        <div class="item item-column-justify">3</div>
+      </div>
+    </div>
+
+    <div class="grupo-exemplo">
+      <p><strong>justify-content: flex-end</strong> - Justifica os itens no fim do eixo principal nesse caso o
+        <strong>y</strong>.
+      </p>
+      <div class="container column justify-end column-container-justify">
+        <div class="item item-column-justify">1</div>
+        <div class="item item-column-justify">2</div>
+        <div class="item item-column-justify">3</div>
+      </div>
+    </div>
+
+    <div class="grupo-exemplo">
+      <p><strong>justify-content: center</strong> - Centraliza os itens no eixo principal nesse caso o
+        <strong>y</strong>.
+      </p>
+      <div class="container column justify-center column-container-justify">
+        <div class="item item-column-justify">1</div>
+        <div class="item item-column-justify">2</div>
+        <div class="item item-column-justify">3</div>
+      </div>
+    </div>
+
+    <div class="grupo-exemplo">
+      <p><strong>justify-content: space-between</strong> - Separa os itens no eixo principal nesse caso o
+        <strong>y</strong>.
+      </p>
+      <div class="container column justify-space-between column-container-justify">
+        <div class="item item-column-justify">1</div>
+        <div class="item item-column-justify">2</div>
+        <div class="item item-column-justify">3</div>
+      </div>
+    </div>
+
+    <div class="grupo-exemplo">
+      <p><strong>justify-content: space-around</strong> - Separa os itens no eixo principal nesse caso o
+        <strong>y</strong>, mantendo metade desse espaço nas extremidades.
+      </p>
+      <div class="container column justify-space-around column-container-justify">
+        <div class="item item-column-justify">1</div>
+        <div class="item item-column-justify">2</div>
+        <div class="item item-column-justify">3</div>
+      </div>
+    </div>
+
+    <div class="grupo-exemplo">
+      <p><strong>justify-content: space-evenly</strong> - Separa os itens no eixo principal nesse caso o
+        <strong>y</strong>, mantendo o mesmo espaço nas extremidades.
+      </p>
+      <div class="container column justify-space-evenly column-container-justify">
+        <div class="item item-column-justify">1</div>
+        <div class="item item-column-justify">2</div>
+        <div class="item item-column-justify">3</div>
+      </div>
+    </div>
+
+    <h2>Align-items (flex-direction: column)</h2>
+
+    <div class="grupo-exemplo">
+      <p><strong>align-items: center</strong> - Centraliza os itens no eixo secundário nesse caso o <strong>x</strong>.
+      </p>
+      <div class="container column align-center column-container-align">
+        <div class="item item-column-align">1</div>
+        <div class="item item-column-align">2</div>
+        <div class="item item-column-align">3</div>
+      </div>
+    </div>
+
+    <div class="grupo-exemplo">
+      <p><strong>align-items: flex-start</strong> - Alinha os itens ao inicio do eixo secundário nesse caso o
+        <strong>x</strong>.
+      </p>
+      <div class="container column align-start column-container-align">
+        <div class="item item-column-align">1</div>
+        <div class="item item-column-align">2</div>
+        <div class="item item-column-align">3</div>
+      </div>
+    </div>
+
+    <div class="grupo-exemplo">
+      <p><strong>align-items: flex-end</strong> - Alinha os itens ao fim do eixo secundário nesse caso o
+        <strong>x</strong>.
+      </p>
+      <div class="container column align-end column-container-align">
+        <div class="item item-column-align">1</div>
+        <div class="item item-column-align">2</div>
+        <div class="item item-column-align">3</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
